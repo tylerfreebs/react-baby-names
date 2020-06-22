@@ -60,8 +60,8 @@ li.boy:hover {
     background: #8bc4ea;
 }
   
-/* ##### Favourites ##### */
-.favourites li:hover:before {
+/* ##### Short List ##### */
+.short-list li:hover:before {
     content: '\00D7';
     position: absolute;
     top: -0.5rem;
@@ -80,7 +80,7 @@ li.boy:hover {
     box-shadow: 0 0 6px rgba(0,0,0,0.3);
 }
 
-.favourites h4 {
+.short-list h2 {
     padding: 1rem 0;
     font-weight: 400;
     font-size: 1.3rem;
@@ -88,7 +88,7 @@ li.boy:hover {
     color: #b3b3b3;
 }
 
-.favourites hr {
+.short-list hr {
     border-bottom: 0;
     border-top: solid 1px #e6e6e6;
     margin: 1.75rem 0;

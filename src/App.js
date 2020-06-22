@@ -2,6 +2,7 @@ import React, { Fragment, useState } from 'react';
 import NamePicker from './components/NamePicker'
 import Search from './components/Search'
 import ShortList from './components/ShortList';
+import ResetSearch from './components/ResetSearch'
 
 function App({ names }) {
   const [searchValue, setSearchValue] = useState('')
@@ -23,6 +24,10 @@ function App({ names }) {
         searchValue={searchValue} 
         shortList={shortList} 
         setShortList={setShortList}
+      />
+      <ResetSearch 
+        searchValue={searchValue}
+        setSearchValue={setSearchValue}
       />
     </Fragment>
     
