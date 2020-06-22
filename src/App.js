@@ -4,31 +4,32 @@ import Search from './components/Search'
 import ShortList from './components/ShortList';
 import ResetSearch from './components/ResetSearch'
 
-function App({ names }) {
+
+function App() {
   const [searchValue, setSearchValue] = useState('')
   const [shortList, setShortList] = useState([])
 
   return (
     <Fragment>
-      <Search 
-        searchValue={searchValue} 
-        setSearchValue={setSearchValue}
-      />
-      <ShortList
-        names={names}
-        shortList={shortList} 
-        setShortList={setShortList}
-      />
-      <NamePicker 
-        names={names} 
-        searchValue={searchValue} 
-        shortList={shortList} 
-        setShortList={setShortList}
-      />
-      <ResetSearch 
-        searchValue={searchValue}
-        setSearchValue={setSearchValue}
-      />
+      <main>
+        <Search 
+          searchValue={searchValue} 
+          setSearchValue={setSearchValue}
+        />
+        <ShortList
+          shortList={shortList} 
+          setShortList={setShortList}
+        />
+        <NamePicker 
+          searchValue={searchValue} 
+          shortList={shortList} 
+          setShortList={setShortList}
+        />
+        <ResetSearch 
+          searchValue={searchValue}
+          setSearchValue={setSearchValue}
+        />
+      </main>
     </Fragment>
     
   )

@@ -1,7 +1,10 @@
 import React, { Fragment } from 'react'
 import NameList from './NameList'
+import { useNames } from '../providers/names'
 
-export default function ShortList({ names, shortList, setShortList}){
+export default function ShortList({ shortList, setShortList}){
+    const names = useNames()
+    
     const shortListedNames = names.filter((entry) =>
         shortList.includes(entry.id)
     )
