@@ -1,16 +1,16 @@
-import React from 'react';
+import React, { Fragment } from 'react';
+import NamePicker from './components/NamePicker'
+import Search from './components/Search'
 
 function App({ names }) {
 
   return (
-    <ul>
-      {names.map((entry) => (
-        <li className={entry.sex} key={entry.id}>
-          <button>{entry.name}</button>
-        </li>
-      ))}
-    </ul>
-  );
+    <Fragment>
+      <Search />
+      <NamePicker names={names}/>
+    </Fragment>
+    
+  )
 }
 
 export default App;
