@@ -1,7 +1,6 @@
-import React, { useEffect, useRef, useState } from 'react';
+import React, { useEffect, useRef } from 'react';
 
-export default function Search(){
-    const [searchValue, setSearchValue] = useState('')
+export default function Search({searchValue, setSearchValue}){
     const inputRef = useRef();
 
     useEffect(() => {
