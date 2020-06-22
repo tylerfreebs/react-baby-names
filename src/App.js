@@ -1,10 +1,15 @@
 import React from 'react';
 
-function App() {
+function App({ names }) {
+
   return (
-    <div className="App">
-      
-    </div>
+    <ul>
+      {names.map((entry) => (
+        <li className={entry.sex} key={entry.id}>
+          <button>{entry.name}</button>
+        </li>
+      ))}
+    </ul>
   );
 }
 
